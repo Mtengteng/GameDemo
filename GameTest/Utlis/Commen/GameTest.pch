@@ -1,0 +1,24 @@
+//
+//  GameTest.pch
+//  GameTest
+//
+//  Created by 马腾 on 2019/3/15.
+//  Copyright © 2019 beiwaionline. All rights reserved.
+//
+
+#ifndef GameTest_pch
+#define GameTest_pch
+
+#import "Config.h"
+#import "BFTools.h"
+#import "BWAlertCtrl.h"
+#import "SafeObjectHeader.h"
+#import <Masonry.h>
+#import "AppDelegate.h"
+#import "MBProgressHUD.h"
+#import "NetHeader.h"
+#import "MJExtension.h"
+#import "UIViewController+ViewControllerHelper.h"
+#import "BWNetManager.h"
+
+#endif /* GameTest_pch */

@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29C4DB39B6C91C6B8E1B863B /* libPods-GameTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 419E3B150F0586C2382E8102 /* libPods-GameTest.a */; };
+		9E3615422238C50100439B4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3615412238C50100439B4A /* AppDelegate.m */; };
+		9E36154F2238C50100439B4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E36154D2238C50100439B4A /* Main.storyboard */; };
+		9E3615512238C50400439B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3615502238C50400439B4A /* Assets.xcassets */; };
+		9E3615542238C50400439B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3615522238C50400439B4A /* LaunchScreen.storyboard */; };
+		9E3615572238C50400439B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3615562238C50400439B4A /* main.m */; };
+		9E36BEA7223F5DCC00E30466 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9E36BEA5223F5DCC00E30466 /* Goblin_Walk.atlas */; };
+		9E36BEA8223F5DCC00E30466 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9E36BEA6223F5DCC00E30466 /* Goblin_Idle.atlas */; };
+		9E36BEAB223F68EA00E30466 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36BEAA223F68EA00E30466 /* Monster.m */; };
+		9E36BEAF223F697400E30466 /* HSKJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36BEAE223F697400E30466 /* HSKJoystick.m */; };
+		9E36BEBF223F6BE600E30466 /* GTGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36BEBE223F6BE600E30466 /* GTGameScene.m */; };
+		9E36BEC3223F734700E30466 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E36BEC1223F734700E30466 /* joystick.png */; };
+		9E36BEC4223F734700E30466 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E36BEC2223F734700E30466 /* dpad.png */; };
+		9E36BECA223F972100E30466 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E36BEC9223F972100E30466 /* hero.png */; };
+		9E36BECC22409A0700E30466 /* att.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E36BECB22409A0700E30466 /* att.png */; };
+		9E429C02223B74BF002CF0B6 /* BWAlertCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BEA223B74BE002CF0B6 /* BWAlertCtrl.m */; };
+		9E429C03223B74BF002CF0B6 /* BFTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BEC223B74BE002CF0B6 /* BFTools.m */; };
+		9E429C04223B74BF002CF0B6 /* WCheckAccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BEE223B74BE002CF0B6 /* WCheckAccessView.m */; };
+		9E429C05223B74BF002CF0B6 /* NSDictionary+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BF3223B74BE002CF0B6 /* NSDictionary+safe.m */; };
+		9E429C06223B74BF002CF0B6 /* NSArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BF4223B74BE002CF0B6 /* NSArray+safe.m */; };
+		9E429C07223B74BF002CF0B6 /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BF8223B74BE002CF0B6 /* ECAuthorizationTools.m */; };
+		9E429C08223B74BF002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BFB223B74BE002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		9E429C09223B74BF002CF0B6 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429BFC223B74BE002CF0B6 /* TPKeyboardAvoidingScrollView.m */; };
+		9E429C16223B7663002CF0B6 /* BWBaseReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C0D223B7663002CF0B6 /* BWBaseReq.m */; };
+		9E429C17223B7663002CF0B6 /* BWNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C0E223B7663002CF0B6 /* BWNetManager.m */; };
+		9E429C18223B7663002CF0B6 /* BWBaseResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C15223B7663002CF0B6 /* BWBaseResp.m */; };
+		9E429C1C223B77EB002CF0B6 /* HeroClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C1B223B77EB002CF0B6 /* HeroClass.m */; };
+		9E429C1F223B7C06002CF0B6 /* STRHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C1E223B7C06002CF0B6 /* STRHero.m */; };
+		9E429C22223B82F3002CF0B6 /* DEXHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C21223B82F3002CF0B6 /* DEXHero.m */; };
+		9E429C25223B8302002CF0B6 /* INTHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C24223B8302002CF0B6 /* INTHero.m */; };
+		9E429C36223BA095002CF0B6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C34223BA094002CF0B6 /* MBProgressHUD.m */; };
+		9E429C42223BA0D5002CF0B6 /* BFBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C3C223BA0D5002CF0B6 /* BFBackButton.m */; };
+		9E429C43223BA0D5002CF0B6 /* UITabBarController+autoRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C3D223BA0D5002CF0B6 /* UITabBarController+autoRotate.m */; };
+		9E429C44223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C3E223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.m */; };
+		9E429C45223BA0D5002CF0B6 /* UINavigationController+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C3F223BA0D5002CF0B6 /* UINavigationController+Class.m */; };
+		9E429C46223BA0D5002CF0B6 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C40223BA0D5002CF0B6 /* UIColor+Util.m */; };
+		9E429C52223BA24A002CF0B6 /* GTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C50223BA24A002CF0B6 /* GTGameViewController.m */; };
+		9E429C55223BA405002CF0B6 /* GTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C54223BA405002CF0B6 /* GTLoginViewController.m */; };
+		9E429C58223BA540002CF0B6 /* GTCreateHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E429C57223BA540002CF0B6 /* GTCreateHero.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30FFB854DE1ED401474E2CB1 /* Pods-GameTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameTest/Pods-GameTest.release.xcconfig"; sourceTree = "<group>"; };
+		419E3B150F0586C2382E8102 /* libPods-GameTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GameTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4369B6117E4CA548EC78FE9E /* Pods-GameTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameTest/Pods-GameTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9E36153D2238C50100439B4A /* GameTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3615402238C50100439B4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E3615412238C50100439B4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E36154E2238C50100439B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E3615502238C50400439B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E3615532238C50400439B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E3615552238C50400439B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3615562238C50400439B4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E36BEA5223F5DCC00E30466 /* Goblin_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Walk.atlas; sourceTree = "<group>"; };
+		9E36BEA6223F5DCC00E30466 /* Goblin_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Idle.atlas; sourceTree = "<group>"; };
+		9E36BEA9223F68EA00E30466 /* Monster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		9E36BEAA223F68EA00E30466 /* Monster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
+		9E36BEAD223F697400E30466 /* HSKJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSKJoystick.h; sourceTree = "<group>"; };
+		9E36BEAE223F697400E30466 /* HSKJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSKJoystick.m; sourceTree = "<group>"; };
+		9E36BEBD223F6BE600E30466 /* GTGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTGameScene.h; sourceTree = "<group>"; };
+		9E36BEBE223F6BE600E30466 /* GTGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTGameScene.m; sourceTree = "<group>"; };
+		9E36BEC1223F734700E30466 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
+		9E36BEC2223F734700E30466 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
+		9E36BEC9223F972100E30466 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		9E36BECB22409A0700E30466 /* att.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = att.png; sourceTree = "<group>"; };
+		9E429BE7223B7407002CF0B6 /* GameTest.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameTest.pch; sourceTree = "<group>"; };
+		9E429BE9223B74BE002CF0B6 /* BFTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTools.h; sourceTree = "<group>"; };
+		9E429BEA223B74BE002CF0B6 /* BWAlertCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWAlertCtrl.m; sourceTree = "<group>"; };
+		9E429BEB223B74BE002CF0B6 /* WCheckAccessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCheckAccessView.h; sourceTree = "<group>"; };
+		9E429BEC223B74BE002CF0B6 /* BFTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTools.m; sourceTree = "<group>"; };
+		9E429BED223B74BE002CF0B6 /* BWAlertCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWAlertCtrl.h; sourceTree = "<group>"; };
+		9E429BEE223B74BE002CF0B6 /* WCheckAccessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCheckAccessView.m; sourceTree = "<group>"; };
+		9E429BF0223B74BE002CF0B6 /* NSDictionary+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+safe.h"; sourceTree = "<group>"; };
+		9E429BF1223B74BE002CF0B6 /* SafeObjectHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeObjectHeader.h; sourceTree = "<group>"; };
+		9E429BF2223B74BE002CF0B6 /* NSArray+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+safe.h"; sourceTree = "<group>"; };
+		9E429BF3223B74BE002CF0B6 /* NSDictionary+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+safe.m"; sourceTree = "<group>"; };
+		9E429BF4223B74BE002CF0B6 /* NSArray+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+safe.m"; sourceTree = "<group>"; };
+		9E429BF6223B74BE002CF0B6 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		9E429BF7223B74BE002CF0B6 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
+		9E429BF8223B74BE002CF0B6 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
+		9E429BFA223B74BE002CF0B6 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		9E429BFB223B74BE002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		9E429BFC223B74BE002CF0B6 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		9E429BFD223B74BE002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		9E429BFF223B74BE002CF0B6 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		9E429C0C223B7663002CF0B6 /* BWBaseReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWBaseReq.h; sourceTree = "<group>"; };
+		9E429C0D223B7663002CF0B6 /* BWBaseReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBaseReq.m; sourceTree = "<group>"; };
+		9E429C0E223B7663002CF0B6 /* BWNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWNetManager.m; sourceTree = "<group>"; };
+		9E429C10223B7663002CF0B6 /* HttpsUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpsUrls.h; sourceTree = "<group>"; };
+		9E429C11223B7663002CF0B6 /* NetHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetHeader.h; sourceTree = "<group>"; };
+		9E429C12223B7663002CF0B6 /* BWNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWNetManager.h; sourceTree = "<group>"; };
+		9E429C14223B7663002CF0B6 /* BWBaseResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWBaseResp.h; sourceTree = "<group>"; };
+		9E429C15223B7663002CF0B6 /* BWBaseResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBaseResp.m; sourceTree = "<group>"; };
+		9E429C1A223B77EB002CF0B6 /* HeroClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeroClass.h; sourceTree = "<group>"; };
+		9E429C1B223B77EB002CF0B6 /* HeroClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeroClass.m; sourceTree = "<group>"; };
+		9E429C1D223B7C06002CF0B6 /* STRHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRHero.h; sourceTree = "<group>"; };
+		9E429C1E223B7C06002CF0B6 /* STRHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRHero.m; sourceTree = "<group>"; };
+		9E429C20223B82F3002CF0B6 /* DEXHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEXHero.h; sourceTree = "<group>"; };
+		9E429C21223B82F3002CF0B6 /* DEXHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEXHero.m; sourceTree = "<group>"; };
+		9E429C23223B8302002CF0B6 /* INTHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INTHero.h; sourceTree = "<group>"; };
+		9E429C24223B8302002CF0B6 /* INTHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INTHero.m; sourceTree = "<group>"; };
+		9E429C34223BA094002CF0B6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9E429C35223BA094002CF0B6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9E429C38223BA0D5002CF0B6 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		9E429C39223BA0D5002CF0B6 /* UINavigationController+Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Class.h"; sourceTree = "<group>"; };
+		9E429C3A223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ViewControllerHelper.h"; sourceTree = "<group>"; };
+		9E429C3B223BA0D5002CF0B6 /* UITabBarController+autoRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+autoRotate.h"; sourceTree = "<group>"; };
+		9E429C3C223BA0D5002CF0B6 /* BFBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFBackButton.m; sourceTree = "<group>"; };
+		9E429C3D223BA0D5002CF0B6 /* UITabBarController+autoRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+autoRotate.m"; sourceTree = "<group>"; };
+		9E429C3E223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ViewControllerHelper.m"; sourceTree = "<group>"; };
+		9E429C3F223BA0D5002CF0B6 /* UINavigationController+Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Class.m"; sourceTree = "<group>"; };
+		9E429C40223BA0D5002CF0B6 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		9E429C41223BA0D5002CF0B6 /* BFBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFBackButton.h; sourceTree = "<group>"; };
+		9E429C50223BA24A002CF0B6 /* GTGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTGameViewController.m; sourceTree = "<group>"; };
+		9E429C51223BA24A002CF0B6 /* GTGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTGameViewController.h; sourceTree = "<group>"; };
+		9E429C53223BA405002CF0B6 /* GTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTLoginViewController.h; sourceTree = "<group>"; };
+		9E429C54223BA405002CF0B6 /* GTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTLoginViewController.m; sourceTree = "<group>"; };
+		9E429C56223BA540002CF0B6 /* GTCreateHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCreateHero.h; sourceTree = "<group>"; };
+		9E429C57223BA540002CF0B6 /* GTCreateHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTCreateHero.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E36153A2238C50100439B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C4DB39B6C91C6B8E1B863B /* libPods-GameTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E3615342238C50100439B4A = {
+			isa = PBXGroup;
+			children = (
+				9E36153F2238C50100439B4A /* GameTest */,
+				9E36153E2238C50100439B4A /* Products */,
+				F7748BD7F0C0D5A6474FC689 /* Pods */,
+				DC8B5755CA7692CED80E869D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E36153E2238C50100439B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E36153D2238C50100439B4A /* GameTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E36153F2238C50100439B4A /* GameTest */ = {
+			isa = PBXGroup;
+			children = (
+				9E429BE5223B73AC002CF0B6 /* Utlis */,
+				9E429BE2223B73AC002CF0B6 /* Models */,
+				9E429BE3223B73AC002CF0B6 /* Views */,
+				9E429BE1223B73AC002CF0B6 /* Controllers */,
+				9E429BE4223B73AC002CF0B6 /* Sources */,
+				9E3615402238C50100439B4A /* AppDelegate.h */,
+				9E3615412238C50100439B4A /* AppDelegate.m */,
+				9E36154D2238C50100439B4A /* Main.storyboard */,
+				9E3615502238C50400439B4A /* Assets.xcassets */,
+				9E3615522238C50400439B4A /* LaunchScreen.storyboard */,
+				9E3615552238C50400439B4A /* Info.plist */,
+				9E3615562238C50400439B4A /* main.m */,
+			);
+			path = GameTest;
+			sourceTree = "<group>";
+		};
+		9E36BEAC223F697400E30466 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				9E36BEAD223F697400E30466 /* HSKJoystick.h */,
+				9E36BEAE223F697400E30466 /* HSKJoystick.m */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		9E36BEC0223F734700E30466 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				9E36BECB22409A0700E30466 /* att.png */,
+				9E36BEC1223F734700E30466 /* joystick.png */,
+				9E36BEC2223F734700E30466 /* dpad.png */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		9E429BE1223B73AC002CF0B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C4F223BA24A002CF0B6 /* GTGameViewController */,
+				9E429C26223B9F54002CF0B6 /* GTLoginViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9E429BE2223B73AC002CF0B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E36BEAC223F697400E30466 /* Joystick */,
+				9E429C19223B77B2002CF0B6 /* Hero */,
+				9E429C0A223B7663002CF0B6 /* Network */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E429BE3223B73AC002CF0B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E36BEBD223F6BE600E30466 /* GTGameScene.h */,
+				9E36BEBE223F6BE600E30466 /* GTGameScene.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E429BE4223B73AC002CF0B6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9E36BEC9223F972100E30466 /* hero.png */,
+				9E36BEC0223F734700E30466 /* Joystick */,
+				9E36BEA6223F5DCC00E30466 /* Goblin_Idle.atlas */,
+				9E36BEA5223F5DCC00E30466 /* Goblin_Walk.atlas */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9E429BE5223B73AC002CF0B6 /* Utlis */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C37223BA0D5002CF0B6 /* Catagorys */,
+				9E429C33223BA094002CF0B6 /* BWMBProgressHUD */,
+				9E429BFE223B74BE002CF0B6 /* Commen */,
+				9E429BF5223B74BE002CF0B6 /* ECAuthorizationTools */,
+				9E429BF9223B74BE002CF0B6 /* KeyBoardHelp */,
+				9E429BE8223B74BE002CF0B6 /* OtherTools */,
+				9E429BEF223B74BE002CF0B6 /* SafeObject */,
+			);
+			path = Utlis;
+			sourceTree = "<group>";
+		};
+		9E429BE8223B74BE002CF0B6 /* OtherTools */ = {
+			isa = PBXGroup;
+			children = (
+				9E429BE9223B74BE002CF0B6 /* BFTools.h */,
+				9E429BEC223B74BE002CF0B6 /* BFTools.m */,
+				9E429BED223B74BE002CF0B6 /* BWAlertCtrl.h */,
+				9E429BEA223B74BE002CF0B6 /* BWAlertCtrl.m */,
+				9E429BEB223B74BE002CF0B6 /* WCheckAccessView.h */,
+				9E429BEE223B74BE002CF0B6 /* WCheckAccessView.m */,
+			);
+			path = OtherTools;
+			sourceTree = "<group>";
+		};
+		9E429BEF223B74BE002CF0B6 /* SafeObject */ = {
+			isa = PBXGroup;
+			children = (
+				9E429BF2223B74BE002CF0B6 /* NSArray+safe.h */,
+				9E429BF4223B74BE002CF0B6 /* NSArray+safe.m */,
+				9E429BF0223B74BE002CF0B6 /* NSDictionary+safe.h */,
+				9E429BF3223B74BE002CF0B6 /* NSDictionary+safe.m */,
+				9E429BF1223B74BE002CF0B6 /* SafeObjectHeader.h */,
+			);
+			path = SafeObject;
+			sourceTree = "<group>";
+		};
+		9E429BF5223B74BE002CF0B6 /* ECAuthorizationTools */ = {
+			isa = PBXGroup;
+			children = (
+				9E429BF6223B74BE002CF0B6 /* Define.h */,
+				9E429BF7223B74BE002CF0B6 /* ECAuthorizationTools.h */,
+				9E429BF8223B74BE002CF0B6 /* ECAuthorizationTools.m */,
+			);
+			path = ECAuthorizationTools;
+			sourceTree = "<group>";
+		};
+		9E429BF9223B74BE002CF0B6 /* KeyBoardHelp */ = {
+			isa = PBXGroup;
+			children = (
+				9E429BFA223B74BE002CF0B6 /* TPKeyboardAvoidingScrollView.h */,
+				9E429BFC223B74BE002CF0B6 /* TPKeyboardAvoidingScrollView.m */,
+				9E429BFD223B74BE002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				9E429BFB223B74BE002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = KeyBoardHelp;
+			sourceTree = "<group>";
+		};
+		9E429BFE223B74BE002CF0B6 /* Commen */ = {
+			isa = PBXGroup;
+			children = (
+				9E429BE7223B7407002CF0B6 /* GameTest.pch */,
+				9E429BFF223B74BE002CF0B6 /* Config.h */,
+			);
+			path = Commen;
+			sourceTree = "<group>";
+		};
+		9E429C0A223B7663002CF0B6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C12223B7663002CF0B6 /* BWNetManager.h */,
+				9E429C0E223B7663002CF0B6 /* BWNetManager.m */,
+				9E429C0B223B7663002CF0B6 /* BWReq */,
+				9E429C13223B7663002CF0B6 /* BWResp */,
+				9E429C0F223B7663002CF0B6 /* NetConfig */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9E429C0B223B7663002CF0B6 /* BWReq */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C0C223B7663002CF0B6 /* BWBaseReq.h */,
+				9E429C0D223B7663002CF0B6 /* BWBaseReq.m */,
+			);
+			path = BWReq;
+			sourceTree = "<group>";
+		};
+		9E429C0F223B7663002CF0B6 /* NetConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C10223B7663002CF0B6 /* HttpsUrls.h */,
+				9E429C11223B7663002CF0B6 /* NetHeader.h */,
+			);
+			path = NetConfig;
+			sourceTree = "<group>";
+		};
+		9E429C13223B7663002CF0B6 /* BWResp */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C14223B7663002CF0B6 /* BWBaseResp.h */,
+				9E429C15223B7663002CF0B6 /* BWBaseResp.m */,
+			);
+			path = BWResp;
+			sourceTree = "<group>";
+		};
+		9E429C19223B77B2002CF0B6 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C56223BA540002CF0B6 /* GTCreateHero.h */,
+				9E429C57223BA540002CF0B6 /* GTCreateHero.m */,
+				9E429C1A223B77EB002CF0B6 /* HeroClass.h */,
+				9E429C1B223B77EB002CF0B6 /* HeroClass.m */,
+				9E429C1D223B7C06002CF0B6 /* STRHero.h */,
+				9E429C1E223B7C06002CF0B6 /* STRHero.m */,
+				9E429C20223B82F3002CF0B6 /* DEXHero.h */,
+				9E429C21223B82F3002CF0B6 /* DEXHero.m */,
+				9E429C23223B8302002CF0B6 /* INTHero.h */,
+				9E429C24223B8302002CF0B6 /* INTHero.m */,
+				9E36BEA9223F68EA00E30466 /* Monster.h */,
+				9E36BEAA223F68EA00E30466 /* Monster.m */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
+		9E429C26223B9F54002CF0B6 /* GTLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C53223BA405002CF0B6 /* GTLoginViewController.h */,
+				9E429C54223BA405002CF0B6 /* GTLoginViewController.m */,
+			);
+			path = GTLoginViewController;
+			sourceTree = "<group>";
+		};
+		9E429C33223BA094002CF0B6 /* BWMBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C34223BA094002CF0B6 /* MBProgressHUD.m */,
+				9E429C35223BA094002CF0B6 /* MBProgressHUD.h */,
+			);
+			path = BWMBProgressHUD;
+			sourceTree = "<group>";
+		};
+		9E429C37223BA0D5002CF0B6 /* Catagorys */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C41223BA0D5002CF0B6 /* BFBackButton.h */,
+				9E429C3C223BA0D5002CF0B6 /* BFBackButton.m */,
+				9E429C38223BA0D5002CF0B6 /* UIColor+Util.h */,
+				9E429C40223BA0D5002CF0B6 /* UIColor+Util.m */,
+				9E429C39223BA0D5002CF0B6 /* UINavigationController+Class.h */,
+				9E429C3F223BA0D5002CF0B6 /* UINavigationController+Class.m */,
+				9E429C3B223BA0D5002CF0B6 /* UITabBarController+autoRotate.h */,
+				9E429C3D223BA0D5002CF0B6 /* UITabBarController+autoRotate.m */,
+				9E429C3A223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.h */,
+				9E429C3E223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.m */,
+			);
+			path = Catagorys;
+			sourceTree = "<group>";
+		};
+		9E429C4F223BA24A002CF0B6 /* GTGameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E429C51223BA24A002CF0B6 /* GTGameViewController.h */,
+				9E429C50223BA24A002CF0B6 /* GTGameViewController.m */,
+			);
+			path = GTGameViewController;
+			sourceTree = "<group>";
+		};
+		DC8B5755CA7692CED80E869D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419E3B150F0586C2382E8102 /* libPods-GameTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7748BD7F0C0D5A6474FC689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4369B6117E4CA548EC78FE9E /* Pods-GameTest.debug.xcconfig */,
+				30FFB854DE1ED401474E2CB1 /* Pods-GameTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E36153C2238C50100439B4A /* GameTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E36155A2238C50400439B4A /* Build configuration list for PBXNativeTarget "GameTest" */;
+			buildPhases = (
+				6A4B8123309DA0ACB5411105 /* [CP] Check Pods Manifest.lock */,
+				9E3615392238C50100439B4A /* Sources */,
+				9E36153A2238C50100439B4A /* Frameworks */,
+				9E36153B2238C50100439B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameTest;
+			productName = GameTest;
+			productReference = 9E36153D2238C50100439B4A /* GameTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E3615352238C50100439B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = beiwaionline;
+				TargetAttributes = {
+					9E36153C2238C50100439B4A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9E3615382238C50100439B4A /* Build configuration list for PBXProject "GameTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E3615342238C50100439B4A;
+			productRefGroup = 9E36153E2238C50100439B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E36153C2238C50100439B4A /* GameTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E36153B2238C50100439B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E36BECC22409A0700E30466 /* att.png in Resources */,
+				9E36BEC4223F734700E30466 /* dpad.png in Resources */,
+				9E36BECA223F972100E30466 /* hero.png in Resources */,
+				9E36154F2238C50100439B4A /* Main.storyboard in Resources */,
+				9E36BEA8223F5DCC00E30466 /* Goblin_Idle.atlas in Resources */,
+				9E36BEA7223F5DCC00E30466 /* Goblin_Walk.atlas in Resources */,
+				9E36BEC3223F734700E30466 /* joystick.png in Resources */,
+				9E3615512238C50400439B4A /* Assets.xcassets in Resources */,
+				9E3615542238C50400439B4A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A4B8123309DA0ACB5411105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E3615392238C50100439B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E429C25223B8302002CF0B6 /* INTHero.m in Sources */,
+				9E429C36223BA095002CF0B6 /* MBProgressHUD.m in Sources */,
+				9E429C46223BA0D5002CF0B6 /* UIColor+Util.m in Sources */,
+				9E429C43223BA0D5002CF0B6 /* UITabBarController+autoRotate.m in Sources */,
+				9E3615572238C50400439B4A /* main.m in Sources */,
+				9E429C22223B82F3002CF0B6 /* DEXHero.m in Sources */,
+				9E429C02223B74BF002CF0B6 /* BWAlertCtrl.m in Sources */,
+				9E429C04223B74BF002CF0B6 /* WCheckAccessView.m in Sources */,
+				9E429C08223B74BF002CF0B6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				9E3615422238C50100439B4A /* AppDelegate.m in Sources */,
+				9E429C03223B74BF002CF0B6 /* BFTools.m in Sources */,
+				9E429C07223B74BF002CF0B6 /* ECAuthorizationTools.m in Sources */,
+				9E429C58223BA540002CF0B6 /* GTCreateHero.m in Sources */,
+				9E429C55223BA405002CF0B6 /* GTLoginViewController.m in Sources */,
+				9E429C09223B74BF002CF0B6 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				9E429C52223BA24A002CF0B6 /* GTGameViewController.m in Sources */,
+				9E429C1C223B77EB002CF0B6 /* HeroClass.m in Sources */,
+				9E429C16223B7663002CF0B6 /* BWBaseReq.m in Sources */,
+				9E429C18223B7663002CF0B6 /* BWBaseResp.m in Sources */,
+				9E36BEBF223F6BE600E30466 /* GTGameScene.m in Sources */,
+				9E429C44223BA0D5002CF0B6 /* UIViewController+ViewControllerHelper.m in Sources */,
+				9E429C06223B74BF002CF0B6 /* NSArray+safe.m in Sources */,
+				9E429C1F223B7C06002CF0B6 /* STRHero.m in Sources */,
+				9E36BEAF223F697400E30466 /* HSKJoystick.m in Sources */,
+				9E429C17223B7663002CF0B6 /* BWNetManager.m in Sources */,
+				9E429C45223BA0D5002CF0B6 /* UINavigationController+Class.m in Sources */,
+				9E429C05223B74BF002CF0B6 /* NSDictionary+safe.m in Sources */,
+				9E36BEAB223F68EA00E30466 /* Monster.m in Sources */,
+				9E429C42223BA0D5002CF0B6 /* BFBackButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E36154D2238C50100439B4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E36154E2238C50100439B4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E3615522238C50400439B4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E3615532238C50400439B4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E3615582238C50400439B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E3615592238C50400439B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E36155B2238C50400439B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4369B6117E4CA548EC78FE9E /* Pods-GameTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6Q3W5CHBZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameTest/Utlis/Commen/GameTest.pch";
+				INFOPLIST_FILE = GameTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.beiwaionline.GameTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E36155C2238C50400439B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FFB854DE1ED401474E2CB1 /* Pods-GameTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6Q3W5CHBZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GameTest/Utlis/Commen/GameTest.pch";
+				INFOPLIST_FILE = GameTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.beiwaionline.GameTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E3615382238C50100439B4A /* Build configuration list for PBXProject "GameTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3615582238C50400439B4A /* Debug */,
+				9E3615592238C50400439B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E36155A2238C50400439B4A /* Build configuration list for PBXNativeTarget "GameTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E36155B2238C50400439B4A /* Debug */,
+				9E36155C2238C50400439B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E3615352238C50100439B4A /* Project object */;
+}
